@@ -32,6 +32,7 @@
   opacity: 40%;
   background-repeat: no-repeat;
   background-size: auto;
+  padding: 0;
 }
 
 @media screen and (max-width: 627px) {
@@ -52,5 +53,6 @@
   .card__like-btn {
     width: 20px;
     height: 18px;
+    padding: 0;
   }
 }
