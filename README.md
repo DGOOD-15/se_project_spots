@@ -4,7 +4,7 @@ An image sharing interactive social media web application.
 
 ## description of site
 
-describe project and functionality
+This is a social media web aplication where users can upload and interact with photos. Users can like photos add their own captions and titles.
 
 ## Tech Stack
 
@@ -16,4 +16,4 @@ describe project and functionality
 
 This webpage is deployed to GitHub Pages
 
-- Link
+- https://dgood-15.github.io/se_project_spots/
