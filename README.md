@@ -22,4 +22,4 @@ This is a social media web aplication where users can upload and interact with p
 
 This webpage is deployed to GitHub Pages
 
-- https://dgood-15.github.io/se_project_spots/
+- [Deployment Link](https://dgood-15.github.io/se_project_spots/)
