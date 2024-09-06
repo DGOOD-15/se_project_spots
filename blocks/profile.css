@@ -28,6 +28,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -57,10 +58,23 @@
   border: none;
   align-self: start;
   opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.profile__pencil {
+.profile__edit-btn::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/pencil.svg);
   margin: 0 8px 0 0;
+}
+
+.profile__edit-btn:hover {
+  opacity: 100%;
+  transition: opacity 0.3s linear 0s;
+  cursor: pointer;
 }
 
 .profile__add-btn {
@@ -78,10 +92,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
-.profile__plus {
+.profile__add-btn::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/plus.svg);
   margin: 0 8px 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile__add-btn:hover {
+  opacity: 80%;
+  transition: opacity 0.3s linear 0s;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
