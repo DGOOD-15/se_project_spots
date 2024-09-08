@@ -16,13 +16,13 @@
   overflow: hidden;
   max-width: 353px;
   color: #212121;
-  margin: 12px 0 0;
 }
 
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 12px 0 0;
 }
 
 .card__like-btn {
@@ -30,7 +30,7 @@
   width: 23px;
   height: 20px;
   border: none;
-  border-color: transparent;
+  background-color: transparent;
   opacity: 40%;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -52,9 +52,7 @@
   .card__title {
     font-size: 16px;
     line-height: 1;
-    margin: 12px 0 0;
     max-width: 246px;
-    color: #212121;
   }
 
   .card__like-btn {
