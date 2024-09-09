@@ -16,6 +16,7 @@
   overflow: hidden;
   max-width: 353px;
   color: #212121;
+  margin: 0;
 }
 
 .card__content {
