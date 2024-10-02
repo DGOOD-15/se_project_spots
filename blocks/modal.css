@@ -106,6 +106,7 @@
 
   .modal__container {
     padding: 12px;
+    width: 300px;
   }
 
   .modal__title {
@@ -133,5 +134,3 @@
     line-height: 1;
   }
 }
-
-/* fonts, style btns, border radius*/
