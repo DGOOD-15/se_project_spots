@@ -109,11 +109,10 @@ function handleEditFormSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  const inputValues = { name: cardNameInput.value, link: cardLinkInput.src };
+  const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   closeModal(cardModal);
-  console.log(cardLinkInput.value);
 }
 
 profileEditButton.addEventListener("click", () => {
@@ -138,5 +137,5 @@ cardForm.addEventListener("submit", handleAddCardSubmit);
 initialCards.forEach((item) => {
   console.log(item);
   const cardElement = getCardElement(item);
-  cardsList.prepend(cardElement);
+  cardsList.append(cardElement);
 });
