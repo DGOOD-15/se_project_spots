@@ -75,7 +75,7 @@ function getCardElement(data) {
   });
 
   cardDeleteBtn.addEventListener("click", () => {
-    cardElement.remove(".card__content");
+    cardElement.remove();
   });
 
   cardImageEl.addEventListener("click", () => {
@@ -85,12 +85,12 @@ function getCardElement(data) {
     previewModalImageEl.alt = data.name;
   });
 
-  previewModalCloseBtn.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
   return cardElement;
 }
+
+previewModalCloseBtn.addEventListener("click", () => {
+  closeModal(previewModal);
+});
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
@@ -113,6 +113,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   closeModal(cardModal);
+  evt.target.reset();
 }
 
 profileEditButton.addEventListener("click", () => {
