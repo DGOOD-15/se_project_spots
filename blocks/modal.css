@@ -169,6 +169,10 @@
     padding: 0 10px;
   }
 
+  .modal__image {
+    max-width: 288px;
+  }
+
   .modal__container {
     padding: 12px;
     width: 300px;
